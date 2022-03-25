@@ -1,8 +1,8 @@
 const generateManagerCard = (manager) => {
   return `
-        <div class="card">
-            <h3>${manager.getName()}</h3>
-            <p><i class="fa-solid fa-mug-hot"></i>${manager.getRole()}</p>
+        <div class="card bg-dark">
+            <h3 class="text-white">${manager.getName()}</h3>
+            <p class="text-white">${manager.getRole()}</p>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">ID: ${manager.getId()}</li>
@@ -16,14 +16,14 @@ const generateManagerCard = (manager) => {
 
 const generateEngineerCard = (engineer) => {
   return `
-        <div class="card">
-              <h3>${engineer.getName()}</h3>
-              <p><i class="fa-solid fa-mug-hot"></i>${engineer.getRole()}</p>
+        <div class="card bg-dark">
+              <h3 class="text-white">${engineer.getName()}</h3>
+              <p class="text-white">${engineer.getRole()}</p>
               <div class="card-body">
                   <ul class="list-group list-group-flush">
                       <li class="list-group-item">ID: ${engineer.getId()}</li>
                       <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-                      <li class="list-group-item">GitHub: ${engineer.getGithub()}</li>
+                      <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}">https://github.com/${engineer.getGithub()}</a></li>
                   </ul>
               </div>
         </div>
@@ -32,9 +32,9 @@ const generateEngineerCard = (engineer) => {
 
 const generateInternCard = (intern) => {
   return `
-          <div class="card">
-                <h3>${intern.getName()}</h3>
-                <p><i class="fa-solid fa-mug-hot"></i>${intern.getRole()}</p>
+          <div class="card bg-dark">
+                <h3 class="text-white">${intern.getName()}</h3>
+                <p class="text-white">${intern.getRole()}</p>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">ID: ${intern.getId()}</li>
@@ -58,7 +58,7 @@ const baseHTML = (htmlArr) => `
 </head>
 <body>
 <header>
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid bg-danger">
     <h1 class="display-4 heading">My Team</h1>
 </div>
 </header>

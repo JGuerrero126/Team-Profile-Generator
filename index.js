@@ -88,7 +88,7 @@ function init() {
         {
           type: "input",
           name: "github",
-          message: "What is the Engineer's GitHub?",
+          message: "What is the Engineer's GitHub username?",
         },
       ])
       .then(({ name, id, email, github }) => {
