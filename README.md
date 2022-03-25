@@ -41,6 +41,12 @@ There are multiple `test.js` files included within this project that make sure e
 
 [![Walkthrough Of App](https://img.youtube.com/vi/aqrd2lV7YJg/0.jpg)](http://www.youtube.com/watch?v=aqrd2lV7YJg)
 
+## Images/Screenshots
+
+---
+
+![Screenshot](Screenshot.png)
+
 ## Questions
 
 ---
