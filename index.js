@@ -1,5 +1,4 @@
 const inquirer = require("inquirer");
-const path = require("path");
 const fs = require("fs");
 
 const Manager = require("./lib/Manager");
@@ -41,7 +40,7 @@ function init() {
         },
       ])
       .then(({ name, id, email, officeNumber }) => {
-        const manager = new Manager(id, name, email, officeNumber);
+        const manager = new Manager(name, id, email, officeNumber);
         teamMemberHTMLArr.push(generateManagerCard(manager));
         mainMenu();
       });
@@ -92,7 +91,7 @@ function init() {
         },
       ])
       .then(({ name, id, email, github }) => {
-        const engineer = new Engineer(id, name, email, github);
+        const engineer = new Engineer(name, id, email, github);
         teamMemberHTMLArr.push(generateEngineerCard(engineer));
         mainMenu();
       });
@@ -122,7 +121,7 @@ function init() {
         },
       ])
       .then(({ name, id, email, school }) => {
-        const intern = new Intern(id, name, email, school);
+        const intern = new Intern(name, id, email, school);
         teamMemberHTMLArr.push(generateInternCard(intern));
         mainMenu();
       });
