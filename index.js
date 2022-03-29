@@ -127,7 +127,7 @@ function init() {
       });
   }
   function generateHTML() {
-    fs.writeFile("./dist/index.html", baseHTML(teamMemberHTMLArr), (err) => {
+    fs.writeFile("./index.html", baseHTML(teamMemberHTMLArr), (err) => {
       err ? console.log(err) : console.log("Your project is good to go!");
     });
   }
